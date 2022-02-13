@@ -19,6 +19,7 @@ body{
 .container{
     display: flex;
     flex-direction: row;
+    
 }
 .container-child{
     display: flex;
@@ -30,14 +31,15 @@ body{
     justify-content: space-between;
 }
 .container-child:nth-child(1){
+    border-radius: 10px 0 0 10px;
     background-color: hsl(31, 77%, 52%);
 }
 .container-child:nth-child(2){
-    background-color: hsl(184, 100%, 22%)
+    background-color: hsl(184, 100%, 22%);
 }
 .container-child:nth-child(3){
-    background-color: hsl(179, 100%, 13%)
-
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
 }
 h1{
     color: white;
@@ -115,5 +117,11 @@ p{
 
     .learn-more{
         width: 30vw;
+    }
+    .container-child:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    .container-child:nth-child(3){
+        border-radius: 0 0 10px 10px;
     }
   }
