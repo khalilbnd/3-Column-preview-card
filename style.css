@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container-child{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
+    width: 18vw;
+    height: 65vh;
+    justify-content: space-between;
+}
+.container-child:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+}
+.container-child:nth-child(2){
+    background-color: hsl(184, 100%, 22%)
+}
+.container-child:nth-child(3){
+    background-color: hsl(179, 100%, 13%)
+
+}
+h1{
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    width: 16vw;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7 ;
+    letter-spacing: 0.6px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.cc-information{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.learn-more{
+    text-decoration: none;
+    text-align: center;
+    width: 9vw;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    background-color: white;
+    
+    border-radius: 35px;
+    transition: all .2s;
+}
+.learn-more:link:hover{
+    transform: scale(1.2);
+}
+
+.sedan{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    color: hsl(179, 100%, 13%);
+}
+.attribution{
+    margin-top: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+.attribution a{
+    color: #1887dd;
+    text-decoration: none;
+}
+.attribution a:visited{
+    color: #1887dd;
+}
+@media only screen and (max-width: 768px) {
+    body{
+        height: 270vh
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container-child{
+        width: 50vw;
+        height: 70vh;
+    }
+    p{
+        line-height: 1.5;
+        width: 50vw;
+    }
+
+    .learn-more{
+        width: 30vw;
+    }
+  }
